@@ -1,0 +1,11 @@
+.card {
+  border: none !important;
+  background-color: #221f1f;
+}
+.card-img-top {
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+.card:hover {
+  scale: 1.1;
+}
