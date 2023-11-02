@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import { Row } from "react-bootstrap";
 import MyMovie from "./MyMovie";
 import SecondBar from "./SecondBar";
+import { Link } from "react-router-dom";
 
 class Main extends Component {
   state = {
@@ -36,8 +37,12 @@ class Main extends Component {
           <SecondBar></SecondBar>
           <Row>
             <h3 className="text-white mt-5">Trending Now</h3>
-            {this.state.movies.splice(0, 6).map((singleFilm) => (
-              <MyMovie key={singleFilm.imdbID} img={singleFilm.Poster} />
+            {this.state.movies.slice(0, 6).map((singleFilm) => (
+              <MyMovie
+                img={singleFilm.Poster}
+                key={singleFilm.imdbID}
+                movieId={singleFilm.imdbID}
+              />
             ))}
           </Row>
         </Container>

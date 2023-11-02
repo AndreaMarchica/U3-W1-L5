@@ -7,3 +7,9 @@
 .navbar-toggler-icon {
   color: white !important;
 }
+.navbar-link {
+  color: white !important;
+}
+.active {
+  color: fuchsia !;
+}

@@ -34,7 +34,7 @@ class Main3 extends Component {
         <Container>
           <Row>
             <h3 className="text-white mt-5">New Releases</h3>
-            {this.state.movies.splice(0, 6).map((singleFilm) => (
+            {this.state.movies.slice(0, 6).map((singleFilm) => (
               <MyMovie key={singleFilm.imdbID} img={singleFilm.Poster} />
             ))}
           </Row>
